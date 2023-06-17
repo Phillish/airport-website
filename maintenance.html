@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Java Airport</title>
+  <link rel="stylesheet" href="airport.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans+Thai+Looped&family=Open+Sans:wght@300&family=Roboto&family=Russo+One&display=swap" rel="stylesheet"> 
+  <script src="modernizr.custom.05819.js"></script>
+</head>
+<body>
+    <header>
+      <h1><span>JAVA</span> AIRPORT</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="flights.html">Flights</a></li> 
+          <li><a href="Rentals.html">Rentals</a></li> 
+          <li><a href="maintenance.html">Maintenance</a></li>
+          <li><a href="contactus.html">Contact Us</a></li> 
+        </ul> 
+      </nav>
+    </header>
+    <div class="contact-us">
+    <h2>Maintenance</h2>
+    <div class="container">
+    <p>Our on site maintenance shop has certified Airframe and Powerplant (A&P) technicians with many years of experience working on single 
+      engine, piston twin and turbine aircraft. Scheduled maintenance, oil changes, repairs, inspections, pre-buys, equipment installations 
+      and engine over hauls on all types of aircraft.</p>
+     <form id="form" action="/" novalidate="novalidate">
+       <div class="input-control">
+          <label for="fullname"> Full Name</label>
+          <input id="fullname" name="fullname" type="text" placeholder="Enter Your Name" required="required"/>
+          <div class="error"></div>
+       </div>
+       <div class="input-control">
+        <label for="model"> Model of Plane</label>
+        <input id="model" name="model" type="text" placeholder="Enter Model of Plane" required="required"/>
+        <div class="error"></div>
+     </div>
+       <div class="input-control">
+          <label for="email"> Email</label>
+          <input id="email" name="email" type="email" placeholder="Enter Your Email" required="required"/>
+          <div class="error"></div>
+       </div>
+       <div class="input-control">
+          <label for="phone"> Phonenumber (U.S. Phonenumbers only)</label>
+          <input id="phone" name="phone" type="text" placeholder="Enter Your Phoneumber" required="required"/>
+          <div class="error"></div>
+       </div>   
+       <div class="input-control">
+          <label for="subject"> Work Requested:</label>
+          <select id="subject" name="subject" required="required">
+            <option>-- Select Subject --</option>
+            <option>Oil Change</option>
+            <option>Annual</option>
+            <option>Other</option>
+          </select>
+          <div class="error"></div>
+        </div>
+       <div class="input-control">
+          <label for="response"> Preferred Method of Contact</label>
+          <div style="display: flex; align-items: center; margin-top: 10px">
+            <input class="check" type="checkbox" class="myCheckbox" id="text" value="Text Message" />
+            <label class="check-list" for="text" id="textLabel">Text Message</label>
+          </div>
+          <div style="display: flex; align-items: center; margin-top: 10px">
+            <input class="check" type="checkbox" class="myCheckbox" id="call" value="Phone Call" />
+            <label class="check-list" for="call" id="callLabel">Phone Call</label> 
+          </div>
+          <div style="display: flex; align-items: center; margin-top: 10px">
+            <input class="check" type="checkbox" class="myCheckbox" id="voiceMail" value="Voice Mail" /> 
+            <label class="check-list" for="voiceMail" id="voiceMailLabel">Voice Message</label>
+          </div>
+          <div style="display: flex; align-items: center; margin-top: 10px">
+            <input class="check" type="checkbox" class="myCheckbox" id="emailMessage" value="Email" /> 
+            <label class="check-list" for="emailMessage" id="emailMessageLabel">Email Message</label>
+          </div>
+          <div style="display: flex; align-items: center; margin-top: 10px">
+            <input class="check" type="checkbox" class="myCheckbox" id="any" value="Any" /> 
+            <label class="check-list" for="any" id="any">Any</label>
+          </div>
+          <div class="error"></div>
+       </div>
+       <div class="input-control">
+          <label for="messageInput"> Message</label>
+          <textarea id ="messageInput" name="messageInput" cols="30" rows="10" placeholder="Enter Your Message" required="required"></textarea>
+          <div class="error"></div>
+       </div>   
+      <button type="submit" class="btn">Send Message</button>
+     </form>
+   </div>
+    </div>
+<footer>
+  <div class="footer-content">
+      <h3>Java Airport</h3>
+      <p><b>Phone: (555) 555-5555</b></p>
+      <p><b>Address: 6908 Skyla Red Clover 158, Schummmouth, OH 93115</b></p>
+  </div>
+  <div class="footer-bottom">
+      <p><b>© 2022 Java Airport All Rights Reserved</b></p>
+  </div>
+</footer>
+<script src="maintenance.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Java Airport</title>
+  <link rel="stylesheet" href="airport.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans+Thai+Looped&family=Open+Sans:wght@300&family=Roboto&family=Russo+One&display=swap" rel="stylesheet"> 
+  <script src="modernizr.custom.05819.js"></script>
+</head>
+<body>
+    <header>
+      <h1><span>JAVA</span> AIRPORT</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="flights.html">Flights</a></li> 
+          <li><a href="Rentals.html">Rentals</a></li> 
+          <li><a href="maintenance.html">Maintenance</a></li>
+          <li><a href="contactus.html">Contact Us</a></li> 
+        </ul> 
+      </nav>
+    </header>
+    <div class ="container">
+    <h2>Discovery Flight</h2>
+    <p>For anyone interested in exploring aviation or just want to experience being a pilot, a Dicovery 
+      flight will allow you to pilot a small aircraft! You'll be seated in the cockpit and paired with a Federal 
+      Aviation Administration (FAA) Certified Flight Instructor (CFI) during your flight. The instructor will spend a few 
+      minutes with you explaining what will occur, where you’ll fly, and a game plan for how the flight will go. You’ll 
+      also undergo a preflight safety briefing, including how to work the doors and seat belts and where to find the sick 
+      sack if you experience air sickness. At the end of your flight you will recieve a flight certificate 
+      and become eligible to pursue flight training!</p>
+    <h2>Adventure Flight</h2>
+    <p>For anyone interested in flying for the scenic view rather than piloting, an Adventure Flight is just
+      for you! You and three others can experience a joy flight in a small aircraft and look at the beautiful landscape
+      from high in the skies. Before flight you will recieve a preflight safety briefing, including how to work the 
+      doors and seat belts and where to find the sick sack if you experience air sickness.</p>
+      <br>
+      <p>If you're interested in a Discovery Flight or Adventure Flight, contact us by either going to the Contact Us
+        page or call our phonenumber to schedule!</p>
+    <div class="flight-cost">
+    <form>
+      <h2>Cost Estimate</h2>
+      <fieldset>
+        <input type="checkbox" class="cb" id="discovery" onchange="cbChange(this)"/>
+         <label for="discovery">
+            <p>Discovery Flight</p>
+            <p2>$100</p2>
+         </label>
+         <input type="checkbox" class="cb" id="adventure" onchange="cbChange(this)"/>
+         <label for="adventure">
+            <p>Adventure Flight</p>
+            <p2>$50</p2>
+         </label>
+         <input type="number" min="0" max="3" id="passengernum" value="0" />
+         <label for="passengernum">
+            <p class="cost-p">Number of additional passengers (maximum&nbsp;3)</p>
+            <p2>$20 per passenger</p2>
+         </label>
+         <input type="number" min="1" max="3" id="flighthrs" value="1" />
+         <label for="flighthrs">
+            <p>Hours of flight time (minimum&nbsp;1)</p>
+            <p2>$50 per hour</p2>
+         </label>
+      </fieldset>
+   <p>Total Payment: <span id="payment"></span></p>
+  </form>
+    </div>
+  </div>
+<footer>
+  <div class="footer-content">
+      <h3>Java Airport</h3>
+      <p><b>Phone: (555) 555-5555</b></p>
+      <p><b>Address: 6908 Skyla Red Clover 158, Schummmouth, OH 93115</b></p>
+  </div>
+  <div class="footer-bottom">
+      <p><b>© 2022 Java Airport All Rights Reserved</b></p>
+  </div>
+</footer>
+<script src="flights.js"></script>
+</body>
+</html>
